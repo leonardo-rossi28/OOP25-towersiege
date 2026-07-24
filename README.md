@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="sfondo iniziale" src="https://github.com/user-attachments/assets/dc859481-a842-4ab4-bb72-596aea891dd5" />
+
 Email dei componenti:
 elia.naldini@studio.unibo.it
 leonardo.rossi28@studio.unibo.it
