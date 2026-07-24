@@ -1,6 +1,5 @@
 package it.unibo.towersiege.commons.soundmanager;
 
-import java.io.InputStream;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -9,6 +8,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
 import java.util.logging.Logger;
+import java.net.URL;
 
 /**
  * Utility Class for managing and playing sound effects.
@@ -29,11 +29,11 @@ public final class SoundManager {
      */
     public static void playSound(final String resourcePath) {
         try {
-            final InputStream is = SoundManager.class.getClassLoader().getResourceAsStream(resourcePath);
-            if (is == null) {
+            final URL url = SoundManager.class.getClassLoader().getResource(resourcePath);
+            if (url == null) {
                 return;
             }
-            try (AudioInputStream audioStream = AudioSystem.getAudioInputStream(is)) {
+            try (AudioInputStream audioStream = AudioSystem.getAudioInputStream(url)) {
                 final Clip clip = AudioSystem.getClip();
                 clip.open(audioStream);
 
