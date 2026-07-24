@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public final class SoundManager {
 
     private static final Logger LOGGER = Logger.getLogger(SoundManager.class.getName());
-    private static final float DEFAULT_VOLUME = 0.5f;
+    private static final float DEFAULT_VOLUME = 1.0f;
     private static float volume = DEFAULT_VOLUME;
 
     private SoundManager() {
