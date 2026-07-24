@@ -47,10 +47,10 @@ public final class StartMenuPanel extends JPanel {
     private static final int GRADIENT_R2 = 50;
     private static final int GRADIENT_G2 = 35;
     private static final int GRADIENT_B2 = 20;
-    private static final int SUB_COLOR_R = 220;
-    private static final int SUB_COLOR_G = 200;
-    private static final int SUB_COLOR_B = 160;
-    private static final int INFO_COLOR_V = 180;
+    private static final int SUB_COLOR_R = 255;
+    private static final int SUB_COLOR_G = 255;
+    private static final int SUB_COLOR_B = 255;
+    private static final int INFO_COLOR_V = 255;
     private static final int BTN_START_G = 150;
     private static final int BTN_START_B = 80;
     private static final int BTN_RULES_R = 50;
@@ -87,7 +87,7 @@ public final class StartMenuPanel extends JPanel {
         }
 
         final JLabel sub = mkLabel("Difendi la base dalle ondate nemiche!",
-                new Font(FONT_SERIF, Font.ITALIC, SUBTITLE_SIZE),
+                new Font(FONT_SERIF, Font.BOLD, SUBTITLE_SIZE),
                 new Color(SUB_COLOR_R, SUB_COLOR_G, SUB_COLOR_B));
         final JLabel i1 = mkLabel("Click sx = piazza/potenzia | Click dx = vendi torre",
                 new Font(FONT_SERIF, Font.PLAIN, INFO_SIZE),
